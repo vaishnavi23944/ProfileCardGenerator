@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Profile Card Generator</h1>
+        <p>Create Your Professional Profile Card</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Enter Your Details</h2>
+
+            <form action="/create-profile" method="POST">
+
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+
+                <label>Bio</label>
+                <textarea name="bio" placeholder="Write something about yourself" required></textarea>
+
+                <label>Skills</label>
+                <input type="text" name="skills" placeholder="HTML, CSS, JavaScript" required>
+
+                <label>Social Links</label>
+                <input type="text" name="social" placeholder="https://linkedin.com/in/yourname">
+
+                <button type="submit">Generate Profile Card</button>
+
+            </form>
+        </section>
+
+        <section class="preview-section">
+            <h2>Profile Preview</h2>
+
+            <div class="profile-card">
+                <div class="avatar">👤</div>
+                <h2>Your Name</h2>
+                <p>Your bio will appear here.</p>
+                <p><strong>Skills:</strong> Your skills</p>
+                <p><strong>Social:</strong> Your link</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Profile Card Generator | Created with Node.js</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
